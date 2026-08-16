@@ -1,0 +1,170 @@
+.about {
+  padding: 120px 8%;
+  background: #02050d;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-heading p {
+  color: #168cff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.section-heading h2 span {
+  color: #087fff;
+}
+
+.heading-line {
+  width: 70px;
+  height: 4px;
+
+  margin: auto;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #742cff,
+    #008cff
+  );
+}
+
+.about-container {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.about-text h3 {
+  font-size: 31px;
+
+  line-height: 1.3;
+
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  color: #9da6b8;
+
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+
+  font-size: 16px;
+}
+
+.about-button {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 14px 24px;
+
+  border-radius: 8px;
+
+  background: linear-gradient(
+    120deg,
+    #6e24ff,
+    #007dff
+  );
+
+  transition: 0.3s ease;
+}
+
+.about-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 30px rgba(58, 50, 255, 0.3);
+}
+
+.about-cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.about-card {
+  padding: 28px;
+
+  border: 1px solid #18263b;
+
+  border-radius: 15px;
+
+  background: #050914;
+
+  transition: 0.35s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #225da0;
+
+  background: #07101e;
+}
+
+.about-icon {
+  color: #008cff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.about-card h4 {
+  font-size: 20px;
+
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  color: #858fa3;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    padding: 80px 20px;
+  }
+
+  .section-heading h2 {
+    font-size: 36px;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
